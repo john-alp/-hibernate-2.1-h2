@@ -1,6 +1,7 @@
 package entity;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Address {
     private Long id;
@@ -14,15 +15,16 @@ public class Address {
     }
 
     public Long getId() {
-        return getId();
+        return id;
     }
+Scanner scanner = new Scanner(System.in);
 
     public void setId(Long id) {
         this.id = id;
     }
 
     public String getCountry() {
-        return getCountry();
+        return country;
     }
 
     public void setCountry(String country) {
@@ -30,7 +32,7 @@ public class Address {
     }
 
     public String getCity() {
-        return getCity();
+        return city;
     }
 
     public void setCity(String sity) {
@@ -41,11 +43,11 @@ public class Address {
         return street;
     }
 
-    public void setStreet() {
+    public void setStreet(String street) {
         this.street = street;
     }
 
-    public String getPostCode(String postCode) {
+    public String getPostCode() {
         return postCode;
     }
 
